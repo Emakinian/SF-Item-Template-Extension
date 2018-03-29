@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Sitefinity Widget</Name>
+    <Description>Sitefinity Widget created by Anil Canli</Description>
+    <Icon>ItemTemplate.ico</Icon>
+    <TemplateID>b2e78195-689d-4e79-9b7c-1b527b40e24d</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>Widget</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <!--<References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>-->
+    <ProjectItem SubType="Code" TargetFileName="Mvc/Models/$fileinputname$Widget/$fileinputname$Model.cs" ReplaceParameters="true">Model.cs</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="Mvc/Models/$fileinputname$Widget/$fileinputname$ViewModel.cs" ReplaceParameters="true">ViewModel.cs</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="Mvc/Controllers/$fileinputname$Widget/$fileinputname$WidgetController.cs" ReplaceParameters="true">Controller.cs</ProjectItem>
+    <ProjectItem SubType="Code" ItemType="EmbeddedResource" TargetFileName="Mvc/Views/$fileinputname$Widget/$fileinputname$.Default.cshtml" ReplaceParameters="true">Default.cshtml</ProjectItem>
+    <ProjectItem SubType="Code" ItemType="EmbeddedResource" TargetFileName="Mvc/Views/$fileinputname$Widget/DesignerView.Simple.cshtml" ReplaceParameters="true">DesignerView.Simple.cshtml</ProjectItem>
+    <ProjectItem SubType="Code" ItemType="EmbeddedResource" TargetFileName="Mvc/Views/$fileinputname$Widget/DesignerView.Simple.json" ReplaceParameters="true">DesignerView.Simple.json</ProjectItem>
+    <ProjectItem SubType="Code" ItemType="EmbeddedResource" TargetFileName="Mvc/Scripts/$fileinputname$Widget/designerview-simple.js" ReplaceParameters="true">designerview-simple.js</ProjectItem>
+    <CustomParameters>
+      <CustomParameter Name="$Controller$" Value="Controller"/>
+      <CustomParameter Name="$Model$" Value="Model"/>
+      <CustomParameter Name="$Widget$" Value="Widget"/>
+      <CustomParameter Name="$ControllerNamespace$" Value="$rootnamespace$.Mvc.Controllers.$fileinputname$Widget"/>
+      <CustomParameter Name="$ModelNamespace$" Value="$rootnamespace$.Mvc.Models.$fileinputname$Widget"/>
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>
+      SitefinityWidgetWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5f1d1fef4d94982a
+    </Assembly>
+    <FullClassName>SitefinityWidgetWizard.SitefinityWidgetWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>
