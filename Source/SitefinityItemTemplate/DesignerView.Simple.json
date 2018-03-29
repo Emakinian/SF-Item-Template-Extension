@@ -1,0 +1,5 @@
+﻿{
+  "priority": 1
+  //"components": [ "sf-image-field", "sf-document-field", "sf-media-field" ],
+  //"scripts": [ "client-components/selectors/media/sf-media-filter.js" ]
+}
